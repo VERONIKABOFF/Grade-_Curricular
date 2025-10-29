@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Curricular Universidade Livre</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f3;
+    margin: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #d4006a;
+  }
+
+  .semester {
+    background-color: #fff0f7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(219, 112, 147, 0.2);
+  }
+
+  .semester h3 {
+    margin-bottom: 10px;
+    color: #ff1493;
+  }
+
+  .subject {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .subject input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #ff69b4;
+  }
+
+  .subject label {
+    flex: 1;
+    color: #b5436f;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #ffc0cb;
+  }
+</style>
+</head>
+<body>
+
+<h2>Grade Curricular Ciência da Computação</h2>
+
+<div class="semester" id="semester1">
+  <h3>1º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s1m1"><label for="s1m1">Circuitos Digitais</label></div>
+  <div class="subject"><input type="checkbox" id="s1m2"><label for="s1m2">Matemática Discreta</label></div>
+  <div class="subject"><input type="checkbox" id="s1m3"><label for="s1m3">Linguagens de Programação</label></div>
+  <div class="subject"><input type="checkbox" id="s1m4"><label for="s1m4">Introdução à Ciência da Computação com Python I</label></div>
+  <div class="subject"><input type="checkbox" id="s1m5"><label for="s1m5">Geometria Analítica</label></div>
+</div>
+
+<div class="semester" id="semester2">
+  <h3>2º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s2m1"><label for="s2m1">Cálculo I</label></div>
+  <div class="subject"><input type="checkbox" id="s2m2"><label for="s2m2">Álgebra Linear I</label></div>
+  <div class="subject"><input type="checkbox" id="s2m3"><label for="s2m3">Estruturas de Dados</label></div>
+  <div class="subject"><input type="checkbox" id="s2m4"><label for="s2m4">Introdução à Ciência da Computação com Python II</label></div>
+  <div class="subject"><input type="checkbox" id="s2m5"><label for="s2m5">Laboratório de Programação Orientada a Objetos I</label></div>
+</div>
+
+<div class="semester" id="semester3">
+  <h3>3º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s3m1"><label for="s3m1">Algoritmos em Grafos</label></div>
+  <div class="subject"><input type="checkbox" id="s3m2"><label for="s3m2">Arquitetura de Computadores I</label></div>
+  <div class="subject"><input type="checkbox" id="s3m3"><label for="s3m3">Probabilidade e Estatística</label></div>
+  <div class="subject"><input type="checkbox" id="s3m4"><label for="s3m4">Cálculo II</label></div>
+  <div class="subject"><input type="checkbox" id="s3m5"><label for="s3m5">Programação Funcional em Haskell</label></div>
+</div>
+
+<div class="semester" id="semester4">
+  <h3>4º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s4m1"><label for="s4m1">Análise de Algoritmos</label></div>
+  <div class="subject"><input type="checkbox" id="s4m2"><label for="s4m2">Métodos Numéricos I</label></div>
+  <div class="subject"><input type="checkbox" id="s4m3"><label for="s4m3">Banco de Dados</label></div>
+  <div class="subject"><input type="checkbox" id="s4m4"><label for="s4m4">Arquitetura de Computadores II</label></div>
+  <div class="subject"><input type="checkbox" id="s4m5"><label for="s4m5">Programação Lógica</label></div>
+</div>
+
+<div class="semester" id="semester5">
+  <h3>5º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s5m1"><label for="s5m1">Redes de Computadores</label></div>
+  <div class="subject"><input type="checkbox" id="s5m2"><label for="s5m2">Introdução à Engenharia de Software</label></div>
+  <div class="subject"><input type="checkbox" id="s5m3"><label for="s5m3">Sistemas Operacionais</label></div>
+  <div class="subject"><input type="checkbox" id="s5m4"><label for="s5m4">Programação Matemática</label></div>
+  <div class="subject"><input type="checkbox" id="s5m5"><label for="s5m5">Fundamentos de Computação Gráfica</label></div>
+</div>
+
+<div class="semester" id="semester6">
+  <h3>6º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s6m1"><label for="s6m1">Linguagens Formais e Autômatos</label></div>
+  <div class="subject"><input type="checkbox" id="s6m2"><label for="s6m2">Inteligência Artificial</label></div>
+  <div class="subject"><input type="checkbox" id="s6m3"><label for="s6m3">Sistemas Distribuídos</label></div>
+  <div class="subject"><input type="checkbox" id="s6m4"><label for="s6m4">Teoria dos Grafos</label></div>
+  <div class="subject"><input type="checkbox" id="s6m5"><label for="s6m5">Cálculo III</label></div>
+</div>
+
+<div class="semester" id="semester7">
+  <h3>7º Semestre</h3>
+  <div class="subject"><input type="checkbox" id="s7m1"><label for="s7m1">Teoria da Computação</label></div>
+  <div class="subject"><input type="checkbox" id="s7m2"><label for="s7m2">Deep Learning</label></div>
+  <div class="subject"><input type="checkbox" id="s7m3"><label for="s7m3">Compiladores</label></div>
+  <div class="subject"><input type="checkbox" id="s7m4"><label for="s7m4">Computação Quântica</label></div>
+  <div class="subject"><input type="checkbox" id="s7m5"><label for="s7m5">Metodologia da Pesquisa</label></div>
+</div>
+
+<script>
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+// Carregar estado salvo no LocalStorage
+checkboxes.forEach(cb => {
+  const saved = localStorage.getItem(cb.id);
+  if(saved === 'true'){
+    cb.checked = true;
+    cb.nextElementSibling.classList.add('completed');
+  }
+
+  // Atualizar estado quando clicar
+  cb.addEventListener('change', () => {
+    const label = cb.nextElementSibling;
+    if(cb.checked){
+      label.classList.add('completed');
+    } else {
+      label.classList.remove('completed');
+    }
+    localStorage.setItem(cb.id, cb.checked);
+  });
+});
+</script>
+
+</body>
+</html>
